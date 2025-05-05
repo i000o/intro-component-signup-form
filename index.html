@@ -5,26 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel-="styles" href="sass/output.css"> 
+  <link rel="stylesheet" href="sass/output.css">
   <script src="js/script.js"></script>
-  
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
-  <h1> 
+  <h1 class="title"> 
     Learn to code by watching others
   </h1>
 
-  <h2> 
+  <h2 class="subheading"> 
     See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
     but understanding how developers think is invaluable. 
   </h2>
 
-  <h3> 
+  <h3 class="try-it"> 
     Try it free 7 days then $20/mo. thereafter
   </h3>
 
-  <form> <!-- do I need novalidate here?-->
+  <form class="form"> <!-- do I need novalidate here?-->
     <input type="text" name="signup" required id="firstname" placeholder="First Name"></input>
     <label for="firstname"></label>
     <input type="text" name="signup" required id="lastname" placeholder="Last Name"></input>
@@ -35,12 +34,12 @@
     <label for="pw"></label>
     <input type="submit" name="signup" required id="submit"></input>
     <label for="submit">Claim your free trial </label>
-    <p> 
+    <p class="terms"> 
       By clicking the button, you are agreeing to our <strong>Terms and Services</strong>
     </p>
   </form>
   
-  <footer>
+  <footer class="footer">
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Iman Osman</a>.
