@@ -77,9 +77,43 @@ input {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 20px;
 }
-.form #submit {
+
+input {
+  width: 100%;
+  margin: 7px;
+  padding: 15px 20px;
+  font-size: 0.9em;
+  font-weight: 600;
+  border: solid 1px hsla(246, 25%, 77%, 0.7);
+  border-radius: 5px;
+}
+
+#submit {
   background-color: hsl(154, 59%, 51%);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 500;
+  font-kerning: normal;
+  padding: 15px 20px;
+}
+
+.terms {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.7em;
+  font-weight: 500;
+  padding: 0 30px;
+  line-height: 180%;
+}
+.terms strong {
+  color: hsl(0, 100%, 74%);
+}
+
+footer {
+  margin: 20px;
 }
 
 /*# sourceMappingURL=output.css.map */

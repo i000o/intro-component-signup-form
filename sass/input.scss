@@ -60,11 +60,46 @@ input {
     flex-flow: column; 
     justify-content: center; 
     align-items: center;
-    // width: 100%;
+    width: 100%;
+    padding: 20px;
+}
 
-    #submit { 
-        background-color: hsl(154, 59%, 51%);
+input { 
+    width: 100%;
+    margin: 7px;
+    padding: 15px 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border: solid 1px hsl(246, 25%, 77%, 70%);
+    border-radius: 5px;
+}
+
+#submit { 
+    background-color: hsl(154, 59%, 51%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+    font-kerning: normal;
+    padding: 15px 20px;
+}
+
+.terms { 
+    color: hsl(246, 25%, 77%);
+    font-size: 0.7em;
+    font-weight: 500;
+    padding: 0 30px;
+    line-height: 180%;
+
+    strong { 
+        color: hsl(0, 100%, 74%);
     }
 }
+
+footer { 
+    margin: 20px;
+}
+
+
 
 
