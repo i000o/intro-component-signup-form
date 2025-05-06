@@ -100,6 +100,20 @@ input.input-error {
   background-size: 7%;
 }
 
+.error {
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  font-size: 0.7em;
+  display: none;
+  text-align: left;
+  align-self: flex-end;
+  font-weight: 500;
+}
+
+.error.visible {
+  display: inline-block;
+}
+
 #submit {
   background-color: hsl(154, 59%, 51%);
   color: #ffffff;
@@ -128,18 +142,4 @@ input.input-error {
 
 footer {
   margin: 20px;
-}
-
-.error {
-  color: hsl(0, 100%, 74%);
-  font-style: italic;
-  font-size: 0.7em;
-  display: none;
-  text-align: left;
-  align-self: flex-end;
-  font-weight: 500;
-}
-
-.error.visible {
-  display: inline-block;
 }/*# sourceMappingURL=input.css.map */

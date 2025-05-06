@@ -77,12 +77,25 @@ input {
 }
 
 input.input-error { // this specificity is important 
-    // display: none;
     border: solid 2px hsl(0, 100%, 74%);
     background-image: url(../images/icon-error.svg); 
     background-position: right 10px center;
     background-repeat: no-repeat;
     background-size: 7%; // I might not need this 
+}
+
+.error { 
+    color: hsl(0, 100%, 74%); 
+    font-style: italic;
+    font-size: 0.7em;
+    display: none;
+    text-align: left;
+    align-self: flex-end; // well done 
+    font-weight: 500;
+}
+
+.error.visible { 
+    display: inline-block;
 }
 
 #submit { 
@@ -117,19 +130,5 @@ footer {
 }
 
 // FOCUS STATES 
-
-.error { 
-    color: hsl(0, 100%, 74%); 
-    font-style: italic;
-    font-size: 0.7em;
-    display: none;
-    text-align: left;
-    align-self: flex-end; // well done 
-    font-weight: 500;
-}
-
-.error.visible { 
-    display: inline-block;
-}
 
 
