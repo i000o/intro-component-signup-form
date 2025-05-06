@@ -92,11 +92,12 @@ input {
   color: hsl(0, 100%, 74%);
 }
 
-input .input-error {
-  border: hsl(0, 100%, 74%);
-  background-image: url(/images/icon-error.svg);
+input.input-error {
+  border: solid 2px hsl(0, 100%, 74%);
+  background-image: url(../images/icon-error.svg);
   background-position: right 10px center;
   background-repeat: no-repeat;
+  background-size: 7%;
 }
 
 #submit {
