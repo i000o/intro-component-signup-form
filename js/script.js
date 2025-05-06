@@ -32,6 +32,20 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
     form.addEventListener("submit", (e) => { 
         e.preventDefault();
 
+        // firstname verif check 
+
+        if (firstName.validity.valueMissing) { 
+            firstName.setCustomValidity("First Name cannot be empty."); 
+            firstNameError.textContent("First Name cannot be empty."); 
+            firstNameError.classList.add("visible"); 
+        } else { 
+            firstNameError.setCustomValidity(""); 
+            firstNameError.classList.remove("visible");
+            firstName.value = ""; 
+        }
+
+        // lastname verif check - add after integrate submit 
+
         // email verif check 
 
         if (email.validity.valueMissing) { 
