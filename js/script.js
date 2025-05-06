@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
             firstName.setCustomValidity("First Name cannot be empty"); 
             firstNameError.textContent = "First Name cannot be empty"; 
             firstNameError.classList.add("visible"); 
+            firstName.classList.add("input-error");
         } else { 
             firstName.setCustomValidity(""); 
             firstNameError.classList.remove("visible");
@@ -57,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
             lastName.setCustomValidity("Last Name cannot be empty"); 
             lastNameError.textContent = "Last Name cannot be empty"; 
             lastNameError.classList.add("visible"); 
+            lastName.classList.add("input-error");
         } else { 
             lastName.setCustomValidity("");
             lastNameError.classList.remove('visible'); 
@@ -69,10 +71,12 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
             email.setCustomValidity("Email Address cannot be empty"); 
             emailError.textContent = "Email Address cannot be empty";
             emailError.classList.add("visible");
+            email.classList.add("input-error");
         } else if (email.validity.typeMismatch) { 
             email.setCustomValidity("Looks like this is not an email"); 
             emailError.textContent = "Looks like this is not an email"; 
             emailError.classList.add("visible"); 
+            email.classList.add("input-error");
         } else { 
             email.setCustomValidity(""); 
             emailError.classList.remove("visible"); 
@@ -85,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
             pw.setCustomValidity("Password cannot be empty"); 
             pwError.textContent = "Password cannot be empty"; 
             pwError.classList.add("visible"); 
+            pw.classList.add("input-error");
         } else { 
             pw.setCustomValidity(""); 
             pwError.classList.remove("visible"); 
