@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
     let emailError = document.getElementById("email-error"); 
     let pwError = document.getElementById("pw-error"); 
 
-    email.addEventListener("input", () => {
+    email.addEventListener("input", () => { // clears error msg as user types a correct email after a wrong one 
         email.setCustomValidity("");
         emailError.textContent = ""; 
         emailError.classList.remove("visible");
@@ -37,12 +37,13 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
         console.log('Last Name value:', lastName.value); 
         console.log('Email value:', email.value); 
         console.log('Password value:', pw.value);
+        console.log(firstNameError.classList.contains("visible"));
 
         // firstname verif check 
 
         if (firstName.validity.valueMissing) { 
-            firstName.setCustomValidity("First Name cannot be empty."); 
-            firstNameError.textContent("First Name cannot be empty."); 
+            firstName.setCustomValidity("First Name cannot be empty"); 
+            firstNameError.textContent = "First Name cannot be empty"; 
             firstNameError.classList.add("visible"); 
         } else { 
             firstName.setCustomValidity(""); 
@@ -50,25 +51,45 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
             firstName.value = ""; 
         }
 
-        // lastname verif check - add after integrate submit ~~
+        // lastname verif check
+
+        if (lastName.validity.valueMissing) { 
+            lastName.setCustomValidity("Last Name cannot be empty"); 
+            lastNameError.textContent = "Last Name cannot be empty"; 
+            lastNameError.classList.add("visible"); 
+        } else { 
+            lastName.setCustomValidity("");
+            lastNameError.classList.remove('visible'); 
+            lastName.value = ""; 
+        }
 
         // email verif check 
 
         if (email.validity.valueMissing) { 
-            email.setCustomValidity("Looks like this is not an email."); 
-            emailError.textContent = "Looks like this is not an email.";
+            email.setCustomValidity("Email Address cannot be empty"); 
+            emailError.textContent = "Email Address cannot be empty";
             emailError.classList.add("visible");
         } else if (email.validity.typeMismatch) { 
-            email.setCustomValidity("Looks like this is not an email."); 
-            emailError.textContent = "Looks like this is not an email."; 
+            email.setCustomValidity("Looks like this is not an email"); 
+            emailError.textContent = "Looks like this is not an email"; 
             emailError.classList.add("visible"); 
         } else { 
             email.setCustomValidity(""); 
             emailError.classList.remove("visible"); 
             email.value = "";
         }
+
+        // pw verif check 
+
+        if (pw.validity.valueMissing) { 
+            pw.setCustomValidity("Password cannot be empty"); 
+            pwError.textContent = "Password cannot be empty"; 
+            pwError.classList.add("visible"); 
+        } else { 
+            pw.setCustomValidity(""); 
+            pwError.classList.remove("visible"); 
+            pw.value = ""; 
+        }
     })
 
 })
-
-// add clear all fields on submit 
