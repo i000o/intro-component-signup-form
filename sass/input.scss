@@ -73,7 +73,10 @@ input {
     font-weight: 600;
     border: solid 1px hsl(246, 25%, 77%, 70%);
     border-radius: 5px;
+    color: hsl(0, 100%, 74%);
 }
+
+// input border needs to be red on select 
 
 #submit { 
     background-color: hsl(154, 59%, 51%);

@@ -89,6 +89,7 @@ input {
   font-weight: 600;
   border: solid 1px hsla(246, 25%, 77%, 0.7);
   border-radius: 5px;
+  color: hsl(0, 100%, 74%);
 }
 
 #submit {
