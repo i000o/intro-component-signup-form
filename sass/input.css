@@ -119,4 +119,10 @@ input {
 
 footer {
   margin: 20px;
+}
+
+.error {
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  font-size: 0.8em;
 }/*# sourceMappingURL=input.css.map */

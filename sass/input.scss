@@ -109,6 +109,12 @@ footer {
 // FOCUS STATES 
 // style red alert symbol on error msg 
 
+.error { 
+    color: hsl(0, 100%, 74%); 
+    font-style: italic;
+    font-size: 0.8em;
+}
+
 
 
 
