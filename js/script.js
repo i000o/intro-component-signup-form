@@ -25,12 +25,18 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
 
     email.addEventListener("input", () => {
         email.setCustomValidity("");
-        error.textContent = ""; 
-        error.classList.remove("visible");
+        emailError.textContent = ""; 
+        emailError.classList.remove("visible");
     });
 
     form.addEventListener("submit", (e) => { 
         e.preventDefault();
+
+        console.log('Submit triggered'); 
+        console.log('First Name value:', firstName.value);
+        console.log('Last Name value:', lastName.value); 
+        console.log('Email value:', email.value); 
+        console.log('Password value:', pw.value);
 
         // firstname verif check 
 
@@ -39,12 +45,12 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
             firstNameError.textContent("First Name cannot be empty."); 
             firstNameError.classList.add("visible"); 
         } else { 
-            firstNameError.setCustomValidity(""); 
+            firstName.setCustomValidity(""); 
             firstNameError.classList.remove("visible");
             firstName.value = ""; 
         }
 
-        // lastname verif check - add after integrate submit 
+        // lastname verif check - add after integrate submit ~~
 
         // email verif check 
 
@@ -53,14 +59,16 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
             emailError.textContent = "Looks like this is not an email.";
             emailError.classList.add("visible");
         } else if (email.validity.typeMismatch) { 
-            emailError.setCustomValidity("Looks like this is not an email."); 
+            email.setCustomValidity("Looks like this is not an email."); 
             emailError.textContent = "Looks like this is not an email."; 
             emailError.classList.add("visible"); 
         } else { 
-            emailError.setCustomValidity(""); 
+            email.setCustomValidity(""); 
             emailError.classList.remove("visible"); 
             email.value = "";
         }
     })
 
 })
+
+// add clear all fields on submit 
