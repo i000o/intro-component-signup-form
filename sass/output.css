@@ -101,6 +101,11 @@ input {
   padding: 15px 20px;
 }
 
+#submit:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
 .terms {
   color: hsl(246, 25%, 77%);
   font-size: 0.7em;
