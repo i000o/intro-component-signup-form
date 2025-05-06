@@ -126,4 +126,9 @@ footer {
   color: hsl(0, 100%, 74%);
   font-style: italic;
   font-size: 0.8em;
+  display: none;
+}
+
+.error.visible {
+  display: inline-block;
 }/*# sourceMappingURL=input.css.map */
