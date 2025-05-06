@@ -50,7 +50,7 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 ## Lessons
 
 1. `novalidate` - _"The novalidate attribute is a way to tell the browser: 'Don’t handle the form validation for me.'... When you add `novalidate`, you're instructing the browser to bypass the automatica validation. That means you take full control of how to validate the input fields."_ AI explaination I found useful on this. I learnt this debugging why my error message `<span>`'s weren't showing up.
-2.
+2. The important of space/no space with CSS combinator selectors. For instance, I had written `input .input-error` which was wrong becaused this calls for descendants of `<input>`. Instead, I needed to remove the space, making a compound selector which looks for _both_, rather that one within the other.
 3.
 4.
 
