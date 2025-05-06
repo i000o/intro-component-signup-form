@@ -23,4 +23,30 @@ document.addEventListener("DOMContentLoaded", () => { // what are the empty brac
     let emailError = document.getElementById("email-error"); 
     let pwError = document.getElementById("pw-error"); 
 
+    email.addEventListener("input", () => {
+        email.setCustomValidity("");
+        error.textContent = ""; 
+        error.classList.remove("visible");
+    });
+
+    form.addEventListener("submit", (e) => { 
+        e.preventDefault();
+
+        // email verif check 
+
+        if (email.validity.valueMissing) { 
+            email.setCustomValidity("Looks like this is not an email."); 
+            emailError.textContent = "Looks like this is not an email.";
+            emailError.classList.add("visible");
+        } else if (email.validity.typeMismatch) { 
+            emailError.setCustomValidity("Looks like this is not an email."); 
+            emailError.textContent = "Looks like this is not an email."; 
+            emailError.classList.add("visible"); 
+        } else { 
+            emailError.setCustomValidity(""); 
+            emailError.classList.remove("visible"); 
+            email.value = "";
+        }
+    })
+
 })
