@@ -92,6 +92,13 @@ input {
   color: hsl(0, 100%, 74%);
 }
 
+input .input-error {
+  border: hsl(0, 100%, 74%);
+  background-image: url(/images/icon-error.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+}
+
 #submit {
   background-color: hsl(154, 59%, 51%);
   color: #ffffff;
@@ -125,8 +132,11 @@ footer {
 .error {
   color: hsl(0, 100%, 74%);
   font-style: italic;
-  font-size: 0.8em;
+  font-size: 0.7em;
   display: none;
+  text-align: left;
+  align-self: flex-end;
+  font-weight: 500;
 }
 
 .error.visible {
