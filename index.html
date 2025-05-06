@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="js/script.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="sass/output.css">
-  <script src="js/script.js"></script>
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <!-- <style> 
@@ -28,7 +27,7 @@ input {
     <strong>Try it free 7 days</strong> then $20/mo. thereafter
   </h3>
 
-  <form class="form"> <!-- do I need novalidate here?-->
+  <form class="form" novalidate> <!-- do I need novalidate here?-->
     <input type="text" name="signup" required id="firstname" placeholder="First Name"></input>
     <label for="firstname"></label>
     <span class="error" id="firstname-error" aria-live="polite" role="alert"></span>
