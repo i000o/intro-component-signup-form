@@ -94,6 +94,11 @@ input {
   color: hsl(0, 100%, 74%);
 }
 
+input:focus {
+  border: solid 1px hsl(249, 10%, 26%);
+  outline: none;
+}
+
 input.input-error {
   border: solid 2px hsl(0, 100%, 74%);
   background-image: url(../images/icon-error.svg);
