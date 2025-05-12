@@ -14,38 +14,42 @@ input {
 } -->
 </style> 
 <body>
-  <h1 class="title"> 
-    Learn to code by watching others
-  </h1>
+  <div class="headings"> 
+    <h1 class="title"> 
+      Learn to code by watching others
+    </h1>
+  
+    <h2 class="subheading"> 
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. 
+    </h2>
+  </div>
 
-  <h2 class="subheading"> 
-    See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-    but understanding how developers think is invaluable. 
-  </h2>
-
-  <h3 class="try-it"> 
-    <strong>Try it free 7 days</strong> then $20/mo. thereafter
-  </h3>
-
-  <form class="form" novalidate> <!-- do I need novalidate here?-->
-    <input type="text" name="signup" required id="firstname" placeholder="First Name"></input>
-    <label for="firstname"></label>
-    <span class="error" id="firstname-error" aria-live="polite" role="alert"></span>
-    <input type="text" name="signup" required id="lastname" placeholder="Last Name"></input>
-    <label for="lastname"></label>
-    <span class="error" id="lastname-error" aria-live="polite" role="alert"></span>
-    <input type="email" name="signup" required id="email" placeholder="Email Address"></input>
-    <label for="email"></label>
-    <span class="error" id="email-error" aria-live="polite" role="alert"></span>
-    <input type="password" name="signup" required id="pw" placeholder="Password"></input>
-    <label for="pw"></label>
-    <span class="error" id="pw-error" aria-live="polite" role="alert"></span>
-    <input type="submit" name="signup" required id="submit" value="Claim your free trial"></input>
-    <label for="submit"></label>
-    <p class="terms"> 
-      By clicking the button, you are agreeing to our <strong>Terms and Services</strong>
-    </p>
-  </form>
+  <div class="sign-up">
+    <h3 class="try-it"> 
+      <strong>Try it free 7 days</strong> then $20/mo. thereafter
+    </h3>
+  
+    <form class="form" novalidate> 
+      <input type="text" name="signup" required id="firstname" placeholder="First Name"></input>
+      <label for="firstname"></label>
+      <span class="error" id="firstname-error" aria-live="polite" role="alert"></span>
+      <input type="text" name="signup" required id="lastname" placeholder="Last Name"></input>
+      <label for="lastname"></label>
+      <span class="error" id="lastname-error" aria-live="polite" role="alert"></span>
+      <input type="email" name="signup" required id="email" placeholder="Email Address"></input>
+      <label for="email"></label>
+      <span class="error" id="email-error" aria-live="polite" role="alert"></span>
+      <input type="password" name="signup" required id="pw" placeholder="Password"></input>
+      <label for="pw"></label>
+      <span class="error" id="pw-error" aria-live="polite" role="alert"></span>
+      <input type="submit" name="signup" required id="submit" value="Claim your free trial"></input>
+      <label for="submit"></label>
+      <p class="terms"> 
+        By clicking the button, you are agreeing to our <strong>Terms and Services</strong>
+      </p>
+    </form>
+  </div>
   
   <footer class="footer">
     <p class="attribution">
