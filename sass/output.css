@@ -122,7 +122,6 @@ input.input-error {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 500;
-  font-kerning: normal;
   padding: 15px 20px;
 }
 
