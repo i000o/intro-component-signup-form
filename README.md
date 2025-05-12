@@ -34,7 +34,8 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 
 ## To-do
 
-- Move onto desktop
+- Refine media queries
+- Screenshot desktop
 
 ## Process
 
