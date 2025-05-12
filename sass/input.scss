@@ -74,7 +74,6 @@ input {
     font-weight: 600;
     border: solid 1px hsl(246, 25%, 77%, 70%);
     border-radius: 5px;
-    // color: hsl(0, 100%, 74%);
 }
 
 input:focus { 
@@ -134,8 +133,79 @@ footer {
     margin: 20px;
 }
 
-// FOCUS STATES 
-
 // Desktop 
 
+@media screen and (min-width: 768px) { 
 
+    body { 
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 100svh;
+        padding: 0 20px;
+        background-repeat: repeat;
+        // background-size: 50%;
+        // background-position: top center;
+    }
+
+    .headings { 
+        // flex: 1; 
+        width: 50%;
+        text-align: left;
+    }
+
+    .title { 
+        font-size: 2.2em;
+        line-height: 120%;
+    }
+
+    .subheading { 
+        margin-left: 0;
+        font-size: 0.7em;
+    }
+
+    .sign-up { 
+        // flex: 1; 
+        width: 50%;
+    }
+
+    footer { 
+        margin-top: -100px;
+        min-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+
+    body { 
+        margin: 0 50px;
+        justify-content: center;
+    }
+
+    .headings {
+        width: 40%;
+    }
+
+    .title { 
+        max-width: 300px;
+    }
+
+    .subheading { 
+        max-width: 400px;
+    }
+
+    .sign-up { 
+        max-width: 500px;
+    }
+
+    footer { 
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 1440px) { 
+
+    .headings { 
+        width: 30%;
+    }
+}
