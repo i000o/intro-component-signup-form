@@ -68,6 +68,7 @@ input {
   font-size: 1em;
   font-weight: 400;
   line-height: 180%;
+  box-shadow: 0px 10px 7px 0px #BF5757;
 }
 
 .form {
@@ -79,6 +80,7 @@ input {
   align-items: center;
   width: 100%;
   padding: 20px;
+  box-shadow: 0px 10px 7px 0px #BF5757;
 }
 
 input {
