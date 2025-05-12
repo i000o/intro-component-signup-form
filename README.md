@@ -35,7 +35,8 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 ## To-do
 
 - Refine media queries
-- Screenshot desktop
+- Sort bg-img
+- Height svh
 
 ## Process
 
