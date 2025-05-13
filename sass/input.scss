@@ -135,77 +135,85 @@ footer {
 
 // Desktop 
 
-@media screen and (min-width: 768px) { 
-
-    body { 
-        flex-direction: row;
-        width: 100%;
-        flex-wrap: wrap;
-        height: 100svh;
-        padding: 0 20px;
-        background-repeat: repeat;
-        // background-size: 50%;
-        // background-position: top center;
-    }
-
-    .headings { 
-        // flex: 1; 
-        width: 50%;
-        text-align: left;
-    }
+@media screen and (min-width: 450px) { 
 
     .title { 
-        font-size: 2.2em;
-        line-height: 120%;
-    }
-
-    .subheading { 
-        margin-left: 0;
-        font-size: 0.7em;
-    }
-
-    .sign-up { 
-        // flex: 1; 
-        width: 50%;
-    }
-
-    footer { 
-        margin-top: -100px;
-        min-width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 }
 
-@media screen and (min-width: 1024px) { 
+// @media screen and (min-width: 768px) { 
 
-    body { 
-        margin: 0 50px;
-        justify-content: center;
-    }
+//     body { 
+//         flex-direction: row;
+//         width: 100%;
+//         flex-wrap: wrap;
+//         height: 100svh;
+//         padding: 0 20px;
+//         background-repeat: repeat;
+//         // background-size: 50%;
+//         // background-position: top center;
+//     }
 
-    .headings {
-        width: 40%;
-    }
+//     .headings { 
+//         // flex: 1; 
+//         width: 50%;
+//         text-align: left;
+//     }
 
-    .title { 
-        max-width: 300px;
-    }
+//     .title { 
+//         font-size: 2.2em;
+//         line-height: 120%;
+//     }
 
-    .subheading { 
-        max-width: 400px;
-    }
+//     .subheading { 
+//         margin-left: 0;
+//         font-size: 0.7em;
+//     }
 
-    .sign-up { 
-        max-width: 500px;
-    }
+//     .sign-up { 
+//         // flex: 1; 
+//         width: 50%;
+//     }
 
-    footer { 
-        margin-top: -100px;
-    }
-}
+//     footer { 
+//         margin-top: -100px;
+//         min-width: 100%;
+//     }
+// }
 
-@media screen and (min-width: 1440px) { 
+// @media screen and (min-width: 1024px) { 
 
-    .headings { 
-        width: 30%;
-    }
-}
+//     body { 
+//         margin: 0 50px;
+//         justify-content: center;
+//     }
+
+//     .headings {
+//         width: 40%;
+//     }
+
+//     .title { 
+//         max-width: 300px;
+//     }
+
+//     .subheading { 
+//         max-width: 400px;
+//     }
+
+//     .sign-up { 
+//         max-width: 500px;
+//     }
+
+//     footer { 
+//         margin-top: -100px;
+//     }
+// }
+
+// @media screen and (min-width: 1440px) { 
+
+//     .headings { 
+//         width: 30%;
+//     }
+// }
