@@ -47,6 +47,10 @@ input {
   font: inherit;
 }
 
+br {
+  display: none;
+}
+
 .title {
   font-size: 1.8em;
   line-height: 140%;
@@ -149,9 +153,78 @@ footer {
   margin: 20px;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 425px) {
   .title {
     margin-right: 20px;
     margin-left: 20px;
+  }
+}
+@media screen and (min-width: 469px) {
+  br {
+    display: unset;
+  }
+}
+@media screen and (min-width: 577px) {
+  br {
+    display: none;
+  }
+  .subheading {
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100svh;
+    padding: 0 20px;
+    background-repeat: repeat;
+    justify-content: center;
+  }
+  .headings {
+    width: 50%;
+    text-align: left;
+  }
+  .title {
+    font-size: 2.2em;
+    line-height: 120%;
+    margin-left: 0;
+  }
+  .subheading {
+    margin-left: 0;
+    font-size: 0.7em;
+  }
+  .sign-up {
+    width: 50%;
+  }
+  footer {
+    margin-top: -100px;
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 865px) {
+  .title {
+    font-size: 2.4em;
+  }
+  .subheading {
+    max-width: 400px;
+    margin-right: 10px;
+  }
+  .sign-up {
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 938px) {
+  .headings {
+    width: 40%;
+  }
+  .subheading {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 1385px) {
+  .headings {
+    width: 35%;
   }
 }/*# sourceMappingURL=input.css.map */

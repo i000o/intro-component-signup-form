@@ -27,6 +27,10 @@ input {
     font: inherit; 
 }
 
+br { 
+    display: none;
+}
+
 // END OF GLOBAL 
 
 .title { 
@@ -135,7 +139,7 @@ footer {
 
 // Desktop 
 
-@media screen and (min-width: 450px) { 
+@media screen and (min-width: 425px) { 
 
     .title { 
         margin-right: 20px;
@@ -143,77 +147,94 @@ footer {
     }
 }
 
-// @media screen and (min-width: 768px) { 
+@media screen and (min-width: 469px) { 
 
-//     body { 
-//         flex-direction: row;
-//         width: 100%;
-//         flex-wrap: wrap;
-//         height: 100svh;
-//         padding: 0 20px;
-//         background-repeat: repeat;
-//         // background-size: 50%;
-//         // background-position: top center;
-//     }
+    br { 
+        display: unset;
+    }
+}
 
-//     .headings { 
-//         // flex: 1; 
-//         width: 50%;
-//         text-align: left;
-//     }
+@media screen and (min-width: 577px) { 
 
-//     .title { 
-//         font-size: 2.2em;
-//         line-height: 120%;
-//     }
+    br { 
+        display: none; 
+    }
 
-//     .subheading { 
-//         margin-left: 0;
-//         font-size: 0.7em;
-//     }
+    .subheading { 
+        max-width: 500px;
+    }
+}
 
-//     .sign-up { 
-//         // flex: 1; 
-//         width: 50%;
-//     }
+@media screen and (min-width: 768px) { 
 
-//     footer { 
-//         margin-top: -100px;
-//         min-width: 100%;
-//     }
-// }
+    body { 
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 100svh;
+        padding: 0 20px;
+        background-repeat: repeat;
+        justify-content: center;
+        // fix bg 
+    }
 
-// @media screen and (min-width: 1024px) { 
+    .headings { 
+        width: 50%;
+        text-align: left;
+    }
 
-//     body { 
-//         margin: 0 50px;
-//         justify-content: center;
-//     }
+    .title { 
+        font-size: 2.2em;
+        line-height: 120%;
+        margin-left: 0; 
+    }
 
-//     .headings {
-//         width: 40%;
-//     }
+    .subheading { 
+        margin-left: 0;
+        font-size: 0.7em;
+    }
 
-//     .title { 
-//         max-width: 300px;
-//     }
+    .sign-up { 
+        width: 50%;
+    }
 
-//     .subheading { 
-//         max-width: 400px;
-//     }
+    footer { 
+        margin-top: -100px;
+        min-width: 100%;
+    }
+}
 
-//     .sign-up { 
-//         max-width: 500px;
-//     }
+@media screen and (min-width: 865px) { 
 
-//     footer { 
-//         margin-top: -100px;
-//     }
-// }
+    .title { 
+        font-size: 2.4em;
+    }
 
-// @media screen and (min-width: 1440px) { 
+    .subheading { 
+        max-width: 400px;
+        margin-right: 10px; 
+    }
 
-//     .headings { 
-//         width: 30%;
-//     }
-// }
+    .sign-up { 
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 938px) { 
+
+    .headings { 
+        width: 40%;
+    }
+
+    .subheading { 
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (min-width: 1385px) {
+
+    .headings { 
+        width: 35%; 
+    }
+}
